@@ -5,7 +5,7 @@
    }
    .container{
     display: flex;
-   justify-content: end;
+
    
    }
    .box1{
@@ -28,3 +28,10 @@
     width: 400px;
     height: 400px;
    }
+
+   @media screen and (max-width:768px) {
+    .container{
+    display: flex;
+    flex-wrap: wrap;
+    }
+}
