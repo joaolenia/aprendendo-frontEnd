@@ -5,11 +5,8 @@
    }
    .container{
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
+    flex-flow: row-reverse wrap;
     
-
    
    }
    .box1{
@@ -33,7 +30,7 @@
     height: 400px;
    }
 
-   @media screen and (max-width:768px) {
+   @media screen and (max-width: 768px) {
     .container{
     display: flex;
     flex-wrap: wrap;
