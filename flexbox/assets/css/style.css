@@ -5,9 +5,8 @@
    }
    .container{
     display: flex;
-    flex-flow: row-reverse wrap;
+   justify-content: space-around;
     
-   
    }
    .box1{
     background-color: red;
