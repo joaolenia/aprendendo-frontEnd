@@ -4,19 +4,32 @@
     box-sizing: border-box;
     font-size: 32px;
     }
-    .pricing-table {
+    .navbar {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    background-color: darkgreen;
+    padding: 10px;
+    color: white;
     }
-    .pricing-item {
-    flex: 1;
-    padding: 20px;
-    background-color: lightblue;
-    text-align: center;
+    .nav-item {
+    position: relative;
+    padding: 10px 20px;
+    cursor: pointer;
     }
-    .featured {
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
     background-color: lightgreen;
-    transform: scale(1.23);
+    min-width: 150px;
+    }
+    .dropdown-item {
+    padding: 10px;
+    color: white;
+    }
+    .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
     }
     
