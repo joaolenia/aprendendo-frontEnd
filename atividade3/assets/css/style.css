@@ -3,45 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 32px;
-}
-
-.table-container {
+    }
+    .portfolio {
     display: flex;
-    flex-direction: column;
-}
-
-.table-row {
-    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    }
+    .project {
+    flex: 1 1 calc(50% - 20px);
     background-color: lightgreen;
-    margin-bottom: 5px;
-}
-
-.header {
-    background-color: green;
-    color: white;
-}
-
-.table-cell {
-    flex: 1;
-    padding: 10px;
-    border-right: 1px solid white;
-}
-
-.table-cell:last-child {
-    border-right: none;
-}
-
-@media (max-width: 768px) {
-    .table-row {
-        flex-direction: column;
+    padding: 20px;
     }
-
-    .table-cell {
-        border-right: none;
-        border-bottom: 1px solid white;
+    @media (max-width: 768px) {
+    .project {
+    flex: 1 1 100%;
     }
-
-    .table-cell:last-child {
-        border-bottom: none;
     }
-}
