@@ -4,24 +4,23 @@
     box-sizing: border-box;
     font-size: 32px;
     }
-    .faq-container {
+    .side-menus {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
     }
-    .faq-item {
-    background-color: lightgray;
-    padding: 15px;
-    border-radius: 5px;
+    .menu-left,
+    .menu-right {
+    flex: 0 0 200px;
+    background-color: lightgreen;
+    padding: 20px;
     }
-    .faq-question {
-    cursor: pointer;
+    .content {
+    flex: 1;
+    background-color: green;
+    padding: 20px;
     }
-    .faq-answer {
+    @media (max-width: 768px) {
+    .menu-left,
+    .menu-right {
     display: none;
-    padding-top: 10px;
     }
-    .faq-item.active .faq-answer {
-    display: block;
     }
-    
