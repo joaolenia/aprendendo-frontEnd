@@ -2,25 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-}
-.navbar{
+    }
+    .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-
-}
-
-.nav-item{
-
- background-color: rgb(223, 4, 4);
-height: 100px;
-width: 100px;
-margin: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
+    flex-wrap: wrap;
+    }
+    .column {
+    flex: 1;
+    padding: 20px;
+    margin: 80px;
+    background-color: lightgreen;
+    justify-content: space-around;
+    }
+    @media (max-width: 768px) {
+    .column {
+    flex: 100%;
+    }
+    }
+    
