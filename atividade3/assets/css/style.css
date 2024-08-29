@@ -4,23 +4,19 @@
     box-sizing: border-box;
     font-size: 32px;
     }
-
-    .blog-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        }
-        .post {
-        flex: 1 1 calc(33.333% - 20px);
-        background-color: lightgreen;
-        padding: 20px;
-        min-height: 150px;
-        }
-        .large {
-        flex: 2 1 calc(66.666% - 20px);
-        }
-        @media (max-width: 768px) {
-        .post, .large {
-        flex: 1 1 100%;
-        }
-        }
+    .pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    }
+    .pricing-item {
+    flex: 1;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+    }
+    .featured {
+    background-color: lightgreen;
+    transform: scale(1.23);
+    }
+    
