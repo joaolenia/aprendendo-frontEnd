@@ -5,21 +5,43 @@
     font-size: 32px;
 }
 
-.comments-section {
+.table-container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
-.comment {
+.table-row {
+    display: flex;
     background-color: lightgreen;
-    padding: 15px;
-    border-radius: 5px;
+    margin-bottom: 5px;
 }
 
-.replies {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 20px;
+.header {
+    background-color: green;
+    color: white;
+}
+
+.table-cell {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid white;
+}
+
+.table-cell:last-child {
+    border-right: none;
+}
+
+@media (max-width: 768px) {
+    .table-row {
+        flex-direction: column;
+    }
+
+    .table-cell {
+        border-right: none;
+        border-bottom: 1px solid white;
+    }
+
+    .table-cell:last-child {
+        border-bottom: none;
+    }
 }
