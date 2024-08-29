@@ -4,18 +4,25 @@
     box-sizing: border-box;
     font-size: 32px;
     }
-    .portfolio {
+    .progress-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    gap: 15px;
     }
-    .project {
-    flex: 1 1 calc(50% - 20px);
+    .progress-bar {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    }
+    .progress {
+    flex: 1;
+    height: 20px;
     background-color: lightgreen;
-    padding: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
     }
-    @media (max-width: 768px) {
-    .project {
-    flex: 1 1 100%;
-    }
+    span {
+    font-weight: bold;
     }
